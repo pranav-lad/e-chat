@@ -1,0 +1,13 @@
+/* Sidebar.css */
+
+aside {
+    background-color: #f1bdbd;
+    padding: 0px 40px;
+    width: 15%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add more styles as needed */
+  }
+  

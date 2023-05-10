@@ -1,0 +1,12 @@
+/* Navbar.css */
+
+nav {
+    background-color: #c9e4ef;
+    padding: 0px 10px;
+    text-align: center;
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add more styles as needed */
+}  
