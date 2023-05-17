@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+// import './Components/Sidebar.js';
+// import './Components/SidebarData.js';
+import Sidebar from './Components/Sidebar.js';
+// import SidebarData from './Components/SidebarData.js';
+// import { useEffect, useState } from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  //  const [data, setData] = useState(false);
+   return (
+     <div className='App'>
+       
+       <Sidebar />
+       
+     {/* <SidebarData /> */}
     </div>
-  );
-}
+   );
+ }
 
 export default App;
