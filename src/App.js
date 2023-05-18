@@ -9,7 +9,6 @@ import Sidebar from './Components/Sidebar.js';
 
 function App() {
   //  const [data, setData] = useState(false);
-  // I will add navbar and main code soon....
    return (
      <div className='App'>
        
