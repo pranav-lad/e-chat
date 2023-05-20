@@ -5,7 +5,10 @@ import React from 'react';
 // import './Components/SidebarData.js';
 import Sidebar from './Components/Sidebar.js';
 // import SidebarData from './Components/SidebarData.js';
-// import { useEffect, useState } from 'react';
+import "./Components/Darkmode/DarkMode";
+// import { DarkMode } from './Components/Darkmode/DarkMode.js';
+
+
 
 function App() {
   //  const [data, setData] = useState(false);
@@ -13,6 +16,7 @@ function App() {
      <div className='App'>
        
        <Sidebar />
+       {/* <DarkMode /> */}
        
      {/* <SidebarData /> */}
     </div>
