@@ -1,0 +1,46 @@
+/* /* .feed {
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+} */
+
+/* .feed {
+    flex: 1;
+    padding: 10px;
+} */
+
+
+
+/* .feed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.feed-container {
+    margin-top: 20px;
+    
+} */ */
+
+
+
+.feed-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    /* Adjust the margin-top value as needed */
+}
+
+
+.feed-content {
+    /* Adjust the styles of the feed content */
+    width: 100%;
+    max-width: 900px;
+    /* Adjust the width as needed */
+    margin-top: 20px;
+    /* Adjust the margin-top value as needed */
+}
+

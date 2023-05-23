@@ -1,3 +1,162 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.SidebarList .row {
+  width: 100%;
+  height: 60px;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  position: relative;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer;
+ 
+  background-color: #34516c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  
+}
+
+.SidebarList .row.active,
+.SidebarList .row:focus {
+  background-color: #293846;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+  margin-left: 10px;
+}
+
+.row #title {
+  flex: 70%;
+  margin-left: 10px;
+}
+
+.Sidebar {
+  height: 90vh;
+  width: 250px;
+  background-color: #2f4050;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  color: white;
+}
+
+.SidebarList .row{
+  padding-left: 20px;
+  color: white;
+}
+.SidebarList {
+  height: auto;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.SidebarList:last-child {
+  margin-top: auto;
+}
+
+.sidebar-text {
+  margin-left: 10px;
+}
+
+.SidebarList .row #title {
+  margin-left: 10px;
+} */
+
+
+
+
+
+/* .settings-float {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#settings-button {
+  margin-top: 20px;
+}
+
+#settings-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+
+
+
+
 .App {
   text-align: center;
 }
@@ -50,17 +209,17 @@ body {
   margin: 0;
   display: flex;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 15px;
   position: relative;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .SidebarList .row:hover {
   cursor: pointer;
-  background-color: #25323f;
+  background-color: #34516c;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  
+
 }
 
 .SidebarList .row.active,
@@ -83,12 +242,34 @@ body {
 }
 
 .Sidebar {
-  height: 100vh;
+  /* height: 90vh;
   width: 250px;
   background-color: #2f4050;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+
+  
+  position: fixed;
+  left: 0;
+  top: 0; */
+
+/* Added code */
+      position: fixed;
+      top: 10vh;
+      bottom: 0;
+      left: 0;
+      height: calc(100vh - 10vh);
+      width: 250px;
+      background-color: #2f4050;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      z-index: 1;
+}
+
+.SidebarList .row {
+  padding-left: 20px;
   color: white;
 }
 
@@ -117,35 +298,21 @@ body {
 
 
 
+/* 
+below code is for feedQ part only */
 
-
-.settings-float {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-#settings-button {
-  margin-top: 20px;
-}
-
-#settings-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+.App {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-
-
+.content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    margin-left: 270px;
+}
