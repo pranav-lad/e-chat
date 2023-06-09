@@ -63,27 +63,360 @@
 
 
 
+// final code
+
+// import React from 'react';
+// import Sidebar from './Components/Sidebar';
+// import Navbar from './Components/Navbar';
+// import Feed from './Components/Feed';
+// import "./App.css";
+
+// function App() {
+//   return (
+//     <div className='App'>
+//       <Navbar />
+//       <div className="content">
+//         <Sidebar />
+//         <Feed />
+//         {/* <FloatingPopup /> */}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default App;
 
 
-import React from 'react';
+
+
+
+// final success settings
+
+// import React, { useState } from 'react';
+// import SettingsPopup from './Components/SettingsPopup';
+// import Sidebar from './Components/Sidebar';
+// import Navbar from './Components/Navbar';
+// import Feed from './Components/Feed';
+// import "./App.css";
+
+// function App() {
+//   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+
+//   const handleItemClick = () => {
+//     setIsSettingsOpen(true);
+//   };
+
+//   const handleClose = () => {
+//     setIsSettingsOpen(false);
+//   };
+
+
+  
+//   return (
+//     <div className="App">
+//       <Navbar />
+//       {/* <div className="content"> */}
+      
+//          <Sidebar />
+//          <Feed />
+        
+//       {/* </div> */}
+//       <Sidebar handleItemClick={handleItemClick} />
+//       {isSettingsOpen && <SettingsPopup handleClose={handleClose} />}
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+//bro final code
+
+import React, { useState } from 'react';
+import SettingsPopup from './Components/SettingsPopup';
 import Sidebar from './Components/Sidebar';
 import Navbar from './Components/Navbar';
 import Feed from './Components/Feed';
-import "./App.css";
+import './App.css';
 
 function App() {
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+
+  const handleItemClick = () => {
+    setIsSettingsOpen(true);
+  };
+
+  const handleClose = () => {
+    setIsSettingsOpen(false);
+  };
+
   return (
-    <div className='App'>
+    <div className="App">
       <Navbar />
-      <div className="content">
-        <Sidebar />
-        <Feed />
-      </div>
+      <Sidebar handleItemClick={handleItemClick} />
+      <Feed />
+      {isSettingsOpen && <SettingsPopup handleClose={handleClose} />}
     </div>
   );
 }
 
 export default App;
+
+
+
+
+//seperate login/signup
+// import React from 'react';
+// import './App.css';
+// import LoginSignupPage from './Components/LoginSignupPage';
+
+// function App() {
+//   return (
+//     <div className="App">
+//       {/* Other code */}
+//       <div className="forms-container">
+//         <LoginSignupPage />
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import SettingsPopup from './Components/SettingsPopup';
+// import Sidebar from './Components/Sidebar';
+// import Navbar from './Components/Navbar';
+// import Feed from './Components/Feed';
+// import LoginSignupPage from './Components/LoginSignupPage';
+// import './App.css';
+
+// function App() {
+//   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+
+//   const handleItemClick = () => {
+//     setIsSettingsOpen(true);
+//   };
+
+//   const handleClose = () => {
+//     setIsSettingsOpen(false);
+//   };
+
+//   return (
+//     <Router>
+//       <div className="App">
+//         <Navbar />
+//         <Sidebar handleItemClick={handleItemClick} />
+//         <Feed />
+//         {isSettingsOpen && <SettingsPopup handleClose={handleClose} />}
+//         <Switch>
+//           <Route path="/login" component={LoginSignupPage} />
+//         </Switch>
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//react state 
+
+// import React, { useState } from 'react';
+// import SettingsPopup from './Components/SettingsPopup';
+// import Sidebar from './Components/Sidebar';
+// import Navbar from './Components/Navbar';
+// import Feed from './Components/Feed';
+// import './App.css';
+// import { ThemeProvider } from './ThemeContext'; // Update the import statement
+
+// function App() {
+//   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+
+//   const handleItemClick = () => {
+//     setIsSettingsOpen(true);
+//   };
+
+//   const handleClose = () => {
+//     setIsSettingsOpen(false);
+//   };
+
+//   return (
+//     <ThemeProvider> {/* Wrap the components with the ThemeProvider */}
+//       <div className="App">
+//         <Navbar />
+//         <Sidebar handleItemClick={handleItemClick} />
+//         <Feed />
+//         {isSettingsOpen && <SettingsPopup handleClose={handleClose} />}
+//       </div>
+//     </ThemeProvider>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// blured background not working
+// import React, { useState } from 'react';
+// import Sidebar from './Components/Sidebar';
+// import Navbar from './Components/Navbar';
+// import Feed from './Components/Feed';
+// import SettingsPopup from './Components/SettingsPopup';
+// import './App.css';
+
+// function App() {
+//   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+
+//   const handleSettingsClick = () => {
+//     setIsSettingsOpen(true);
+//   };
+
+//   const handleItemClick = (itemName) => {
+//     // Handle the click event for each item in the sidebar
+//     console.log('Clicked item:', itemName);
+//   };
+
+//   const handleCloseSettings = () => {
+//     setIsSettingsOpen(false);
+//   };
+
+//   return (
+//     <div className="App">
+//       <Navbar />
+//       <div className="content">
+//         <Sidebar handleSettingsClick={handleSettingsClick} handleItemClick={handleItemClick} />
+//         <Feed />
+//       </div>
+//       {isSettingsOpen && (
+//         <>
+//           <div className="blurred-background"></div>
+//           <SettingsPopup handleCloseSettings={handleCloseSettings} />
+//         </>
+//       )}
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
+// settings popup code
+// import React, { useState } from 'react';
+// import Sidebar from './Components/Sidebar';
+// import Navbar from './Components/Navbar';
+// import Feed from './Components/Feed';
+// import FloatingPopup from './Components/FloatingPopup';
+// import SettingsPage from './Components/SettingsPage'; 
+// import "./App.css";
+
+// function App() {
+//   const [isSettingsOpen, setIsSettingsOpen] = useState(false); // Add state variable for settings popup
+
+//   const toggleSettingsPopup = () => {
+//     setIsSettingsOpen(!isSettingsOpen);
+//   };
+
+//   return (
+//     <div className='App'>
+//       <Navbar />
+//       <div className="content">
+//         <Sidebar toggleSettingsPopup={toggleSettingsPopup} /> {/* Pass toggleSettingsPopup as prop */}
+//         <Feed />
+//       </div>
+//       {isSettingsOpen && (
+//         <FloatingPopup>
+//           <SettingsPage />
+//         </FloatingPopup>
+//       )}
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

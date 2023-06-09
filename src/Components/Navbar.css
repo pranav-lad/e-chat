@@ -93,8 +93,19 @@
 .Navbar ul{
     width: 80%;
     align-items: center;
-    display: flex;
+    /* display: flex; */
     list-style: none;
     justify-content: space-between;
 
 }
+
+
+
+
+
+
+
+
+
+
+
