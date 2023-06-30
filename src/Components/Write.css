@@ -1,0 +1,14 @@
+.field{
+    width: 95%;
+    height: 10vh;
+    margin-top: 2vh;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    background: white;
+    align-items: center;
+}
+.field img{
+    width: 50px;
+    padding-right: 10px;
+}

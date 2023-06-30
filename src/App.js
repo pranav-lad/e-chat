@@ -137,8 +137,8 @@ import React, { useState } from 'react';
 import SettingsPopup from './Components/SettingsPopup';
 import Sidebar from './Components/Sidebar';
 import Navbar from './Components/Navbar';
-import Feed from './Components/Feed';
 import './App.css';
+import Maincontent from './Components/Maincontent';
 
 function App() {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
@@ -153,9 +153,11 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      <Sidebar handleItemClick={handleItemClick} />
-      <Feed />
+       <Navbar />
+       <div className='main-section'>
+       <Sidebar handleItemClick={handleItemClick}/>
+       <Maincontent />
+       </div>
       {isSettingsOpen && <SettingsPopup handleClose={handleClose} />}
     </div>
   );
