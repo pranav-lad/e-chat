@@ -83,8 +83,8 @@
 
 
 import React, { useState } from 'react';
-import { Avatar } from '@material-ui/core';
-import EditIcon from '@material-ui/icons/Edit';
+import { Avatar } from '@mui/material';
+import { Edit, Bookmark, Description, ExitToApp } from '@mui/icons-material';
 import './SettingsPage.css';
 
 const SettingsPage = ({ handleClose }) => {
@@ -103,7 +103,7 @@ const SettingsPage = ({ handleClose }) => {
         ✕
       </button>
       <h1>
-        <EditIcon className="edit-icon" />
+        <Edit className="edit-icon" />
         Edit Profile
       </h1>
       <p>Change Profile Picture</p>
