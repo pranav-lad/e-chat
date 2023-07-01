@@ -246,8 +246,8 @@
 
 // good win for close button
 import React, { useState } from 'react';
-import { Avatar } from '@material-ui/core';
-import { Edit, Bookmark, Description, ExitToApp } from '@material-ui/icons';
+import { Avatar } from '@mui/material';
+import { Edit, Bookmark, Description, ExitToApp } from '@mui/icons-material';
 import SettingsPage from './SettingsPage';
 import './ProfilePopup.css';
 

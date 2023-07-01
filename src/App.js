@@ -134,11 +134,13 @@
 //bro final code
 
 import React, { useState } from 'react';
+import { Route, Routes } from "react-router-dom"
 import SettingsPopup from './Components/SettingsPopup';
 import Sidebar from './Components/Sidebar';
 import Navbar from './Components/Navbar';
 import './App.css';
 import Maincontent from './Components/Maincontent';
+import LoginSignup from './Components/LoginSignupPage';
 
 function App() {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
@@ -153,10 +155,15 @@ function App() {
 
   return (
     <div className="App">
-       <Navbar />
+        <Routes>
+          <Route path="/" element={<LoginSignup />} />          
+        </Routes> 
+       <Navbar />   
        <div className='main-section'>
-       <Sidebar handleItemClick={handleItemClick}/>
-       <Maincontent />
+       <Sidebar handleItemClick={handleItemClick}/>    
+        <Routes>          
+          <Route path="/home" element={<Maincontent />} />
+        </Routes> 
        </div>
       {isSettingsOpen && <SettingsPopup handleClose={handleClose} />}
     </div>
